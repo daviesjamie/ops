@@ -4,7 +4,7 @@ providers:
     class: octodns.provider.yaml.YamlProvider
     directory: ./zones
     default_ttl: 3600
-    enforce_order: true
+    enforce_order: false
   digitalocean:
     class: octodns.provider.digitalocean.DigitalOceanProvider
     token: env/DO_ACCESS_TOKEN

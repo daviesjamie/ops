@@ -3,8 +3,8 @@
   - type: "A"
     value: "159.65.92.227"
     
-  - ttl: 14400
-    type: "MX"
+  - type: "MX"
+    ttl: 14400
     values:
       - exchange: "in1-smtp.messagingengine.com."
         preference: 10
@@ -15,18 +15,18 @@
     value: "v=spf1 include:spf.messagingengine.com ?all"
 
 "fm1._domainkey":
-  ttl: 43200
   type: "CNAME"
+  ttl: 43200
   value: "fm1.jagd.me.dkim.fmhosted.com."
 
 "fm2._domainkey":
-  ttl: 43200
   type: "CNAME"
+  ttl: 43200
   value: "fm2.jagd.me.dkim.fmhosted.com."
 
 "fm3._domainkey":
-  ttl: 43200
   type: "CNAME"
+  ttl: 43200
   value: "fm3.jagd.me.dkim.fmhosted.com."
 
 "radar":
