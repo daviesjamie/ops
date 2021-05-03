@@ -1,0 +1,23 @@
+---
+providers:
+  config:
+    class: octodns.provider.yaml.YamlProvider
+    directory: ./zones
+    default_ttl: 3600
+    enforce_order: true
+  digitalocean:
+    class: octodns.provider.digitalocean.DigitalOceanProvider
+    token: env/DO_ACCESS_TOKEN
+
+zones:
+  jagd.me.:
+    sources:
+      - config
+    targets:
+      - digitalocean
+  
+  jamiedavies.me.:
+    sources:
+      - config
+    targets:
+      - digitalocean
